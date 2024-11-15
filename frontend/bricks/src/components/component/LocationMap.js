@@ -15,9 +15,11 @@ const LocationMap = ({
   height = 300,
   className = ''
 }) => {
-  // Use the formatted address in the component
   const formattedAddress = `${address}, ${subDistrict}, ${district}, ${province} ${zipCode}`;
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+  
+  // Use environment variable
+  const MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
   return (
     <div className={`location-map-container ${className}`}>
@@ -26,7 +28,6 @@ const LocationMap = ({
         <div className="location-details">
           <MapPin size={20} />
           <div className="location-text">
-            {/* Use formattedAddress instead of concatenating strings */}
             <div>{formattedAddress}</div>
           </div>
         </div>
@@ -38,7 +39,7 @@ const LocationMap = ({
           height={height}
           frameBorder="0"
           style={{ border: 0, borderRadius: '8px' }}
-          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyCBHYlYm0PdIVog1O09m79OdW4nJh_27T8&q=${formattedAddress}&zoom=15`}
+          src={`https://www.google.com/maps/embed/v1/place?key=${MAPS_API_KEY}&q=${formattedAddress}&zoom=15`}
           allowFullScreen
         />
         {showDirectionsLink && (
