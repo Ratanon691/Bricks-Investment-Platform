@@ -1,0 +1,59 @@
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: rgb(144, 164, 154);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+  }
+  
+  .admin-navbar__logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    color: white;
+  }
+  
+  .admin-navbar__links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .admin-navbar__link {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  
+  .admin-navbar__link:hover, 
+  .admin-navbar__link--active {
+    opacity: 0.7;
+  }
+  
+  .admin-navbar__auth {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .admin-navbar__btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .admin-navbar__btn--logout {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .admin-navbar__btn--logout:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }

@@ -1,0 +1,41 @@
+.home-page {
+  min-height: 100vh;
+  background-image: url('../Pics/Homepagebg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Heebo', sans-serif;
+  overflow: hidden;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+  text-align: center;
+  color: white;
+  translate: 0 35%;
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white
+}
+
+.get-started-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: #e0f0ff;
+  color: #333;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #c0e0ff;
+}

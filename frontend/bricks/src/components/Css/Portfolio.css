@@ -1,0 +1,114 @@
+.portfolio-page {
+    background-color: rgb(144, 164, 154);
+    color: #333;
+    font-family: 'Heebo', sans-serif;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+.portfolio-content {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.portfolio-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.property-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+}
+
+.property-info {
+    padding: 1.5rem;
+}
+
+.property-type-port {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: rgb(144, 164, 154);
+    color: #fff;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.property-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.property-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.detail-item svg {
+    color: rgb(144, 164, 154);
+}
+
+.ownership-info {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ecf0f1;
+}
+
+.ownership-info p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.no-properties {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .properties-grid {
+        grid-template-columns: 1fr;
+    }
+}

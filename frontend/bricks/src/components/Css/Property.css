@@ -1,0 +1,171 @@
+.property-page {
+  background-color: rgb(144, 164, 154);
+  color: white;
+  font-family: 'Heebo', sans-serif;
+  min-height: 100vh;
+  padding-top: 70px;
+  display: flex;
+}
+
+.content {
+  padding: 2rem 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 60%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4a5759;
+  color: white;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.property-types {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.property-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100px;
+  height: 100px;
+}
+
+.property-type:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.property-type svg {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.property-type span {
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.property-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-10px);
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 1rem;
+}
+
+.district {
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.invest-button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #4a5759;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.invest-button:hover {
+  background-color: #3a4547;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .search-input {
+    width: 70%;
+  }
+
+  .property-types {
+    flex-wrap: wrap;
+  }
+
+  .property-type {
+    width: 80px;
+    padding: 0.5rem;
+  }
+
+  .property-type svg {
+    font-size: 1.5rem;
+  }
+
+  .property-type span {
+    font-size: 0.9rem;
+  }
+}

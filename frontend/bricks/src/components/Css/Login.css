@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+.login-page {
+  background-color: rgb(144, 164, 154);
+  color: white;
+  font-family: 'Heebo', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.house-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 300px;
+  height: auto;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.login-content {
+  flex: 1;
+  display: flex;
+  padding: 2rem 5%;
+  position: relative;
+  z-index: 1;
+}
+
+.login-left, .login-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bricks-logo {
+  font-family: 'Merriweather', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.login-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-group svg {
+  position: absolute;
+  left: 10px;
+  color: rgb(144, 164, 154);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.7rem 1rem 0.7rem 2.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(74, 87, 89);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(144, 164, 154);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.login-button {
+  background-color: #4a5759;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.login-button:hover {
+  background-color: #3a4547;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.forgot-password a, .register-link a {
+  color: white;
+  text-decoration: underline;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .login-content {
+    flex-direction: column;
+  }
+
+  .login-left, .login-right {
+    width: 100%;
+  }
+
+  .bricks-logo {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .login-container {
+    padding: 1.5rem;
+  }
+
+  .login-title {
+    font-size: 2rem;
+  }
+}

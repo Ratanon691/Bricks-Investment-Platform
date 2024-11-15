@@ -1,0 +1,132 @@
+.admin-property-management-page {
+    padding-top: 70px; /* Adjust based on AdminNavBar height */
+    background-color: #f0f4f2;
+    min-height: 100vh;
+  }
+  
+  .admin-property-management-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .property-management {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .search-and-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .filter-button {
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-button.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .property-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .property-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .property-card h2 {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+  
+  .property-card p {
+    margin: 5px 10px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .edit-button, .delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .edit-button:hover, .delete-button:hover {
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 600px) {
+    .search-bar {
+      max-width: 100%;
+    }
+  
+    .filter-buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .filter-button {
+      margin: 5px 0;
+    }
+  }

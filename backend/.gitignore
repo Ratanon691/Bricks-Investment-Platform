@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+
+# environment variables
+.env
+
+# uploads directory content but keep directory
+/uploads/*
+!/uploads/.gitkeep
+
+# logs
+*.log
+
+# runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# misc
+.DS_Store

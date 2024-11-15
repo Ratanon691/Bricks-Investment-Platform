@@ -1,0 +1,272 @@
+/* Page Layout */
+.admin-add-property-page {
+  padding: 70px 20px 20px 20px;
+}
+
+.admin-add-property {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.admin-add-property h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Layout */
+.admin-add-property form {
+  display: grid;
+  gap: 15px;
+}
+
+.admin-add-property label {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+/* Input Styles */
+.admin-add-property input,
+.admin-add-property select,
+.admin-add-property textarea {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-add-property input:focus,
+.admin-add-property select:focus,
+.admin-add-property textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+/* Remove number input spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Textarea specific styles */
+.admin-add-property textarea {
+  height: 100px;
+  resize: vertical;
+  min-height: 60px;
+  max-height: 300px;
+}
+
+/* Button Styles */
+.admin-add-property button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.admin-add-property button:hover {
+  background-color: #45a049;
+}
+
+.admin-add-property button:active {
+  transform: translateY(1px);
+}
+
+/* Error Message */
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Image Upload Section */
+.image-upload input[type="file"] {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.image-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.image-preview-item {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.image-preview-item:hover img {
+  transform: scale(1.05);
+}
+
+.remove-image {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.remove-image:hover {
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+/* Coordinates Section */
+.coordinates-display {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.coordinates-display > div {
+  flex: 1;
+}
+
+.coordinate-label {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.coordinates-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.coordinates-input-container input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.coordinates-input-container input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.parsed-coordinates {
+  background-color: #f5f5f5;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 14px;
+  display: flex;
+  gap: 1rem;
+}
+
+.parsed-coordinates span {
+  color: #333;
+}
+
+.coordinate-hint {
+  color: #666;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+.coordinate-label {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+.coordinates-display input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.coordinates-display input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+/* Help Text */
+.location-help {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .admin-add-property {
+    padding: 10px;
+  }
+
+  .coordinates-display {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .image-preview-container {
+    justify-content: center;
+  }
+
+  .admin-add-property button {
+    width: 100%;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .admin-add-property button,
+  .image-preview-item img,
+  .coordinates-display input {
+    transition: none;
+  }
+}

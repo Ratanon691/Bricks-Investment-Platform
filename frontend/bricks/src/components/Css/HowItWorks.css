@@ -1,0 +1,138 @@
+
+.how-it-works-page {
+    min-height: 100vh;
+    background-color: rgb(144, 164, 154); 
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    position: relative;
+    padding-top: 80px;
+  }
+  
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Pics/HowItWorks.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 0;
+  }
+  
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    padding: 2rem;
+  }
+  
+  .how-it-works-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .intro-section {
+    width: 100%;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  
+  .intro {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .how-it-works-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    color:white;
+  }
+  
+  .how-it-works-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .features-section {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4rem 2rem;
+    margin-top: auto;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33.333% - 2rem);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .features-section .feature {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e0f0ff;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  @media (max-width: 1024px) {
+    .feature {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .how-it-works-title {
+      font-size: 2.5rem;
+    }
+  
+    .how-it-works-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .features-container {
+      flex-direction: column;
+    }
+  
+    .feature {
+      flex: 1 1 100%;
+    }
+  }
